@@ -7,6 +7,7 @@
 2. Run -
 
 	`cd ~/Spotify`
+	
 	`git clone git@github.com:adambutler/spotify-album-app.git`
 	
 3. Open Spotify and type `spotify:app:temp` into the search bar and press enter
