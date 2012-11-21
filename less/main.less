@@ -1,0 +1,69 @@
+// Ideal = 150 * 5 = 750 + 40px = 790px
+
+@coverSize: 150px;
+@albumsPerRow: 5;
+
+.container {
+	margin: 20px;
+
+	.inner-container {
+		margin: auto;
+		max-width: 800px;
+
+		ul.albums {
+			height: 1000px;
+			//background: #ddd;
+
+			li {
+				float: left;
+
+				width: 20%;
+				min-width: 154px;
+
+				margin-top: 20px;
+
+				text-align: center;
+
+				.cover {
+					position: relative;
+					display: block;
+					margin: auto;
+					width: @coverSize;
+					height: @coverSize;
+					background-size: 100%;
+					-webkit-border-radius: 2px;
+					-webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.45);
+					margin-bottom: 4px;
+
+					.play {
+						position: absolute;
+						width: 45px;
+						height: 45px;
+						right: 8px;
+						bottom: 8px;
+						background: url('sp://import/img/play-button-M.png');
+					}
+				}
+
+				.title, .artist {
+					display: block;
+					text-overflow: ellipsis;
+					-webkit-text-overflow: ellipsis;
+
+					white-space: nowrap;
+					overflow: hidden;
+
+					padding: 0 10px;
+
+					font-weight: bold;
+					text-overflow: ellipsis;
+				}
+
+				.artist {
+					color: #aaa;
+				}
+			}
+		}
+	}
+
+}

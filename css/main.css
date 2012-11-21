@@ -1,0 +1,49 @@
+.container {
+  margin: 20px;
+}
+.container .inner-container {
+  margin: auto;
+  max-width: 800px;
+}
+.container .inner-container ul.albums {
+  height: 1000px;
+}
+.container .inner-container ul.albums li {
+  float: left;
+  width: 20%;
+  min-width: 154px;
+  margin-top: 20px;
+  text-align: center;
+}
+.container .inner-container ul.albums li .cover {
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  background-size: 100%;
+  -webkit-border-radius: 2px;
+  -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.45);
+  margin-bottom: 4px;
+}
+.container .inner-container ul.albums li .cover .play {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  right: 8px;
+  bottom: 8px;
+  background: url('sp://import/img/play-button-M.png');
+}
+.container .inner-container ul.albums li .title,
+.container .inner-container ul.albums li .artist {
+  display: block;
+  -webkit-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0 10px;
+  font-weight: bold;
+  text-overflow: ellipsis;
+}
+.container .inner-container ul.albums li .artist {
+  color: #aaa;
+}
